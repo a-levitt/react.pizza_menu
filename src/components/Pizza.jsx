@@ -3,11 +3,11 @@ import focaccia from '../assets/pizzas/focaccia.jpg';
 
 function Pizza() {
     return (
-        <>
+        <div className="pizza">
             <img src={focaccia} />
-            <h2>Focaccia</h2>
+            <h3>Focaccia</h3>
             <p>Bread with italian olive oil and rosemary</p>
-        </>
+        </div>
     )
 }
 

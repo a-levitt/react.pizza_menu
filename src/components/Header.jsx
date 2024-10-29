@@ -1,6 +1,10 @@
 
 function Header() {
-    return <h1>Hello, React</h1>
+    return (
+        <header className="header">
+            <h1>Fast React Pizza Co.</h1>
+        </header>
+    )
 }
 
 export default Header;

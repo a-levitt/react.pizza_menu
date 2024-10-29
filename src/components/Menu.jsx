@@ -2,11 +2,12 @@ import Pizza from "./Pizza.jsx";
 
 function Menu() {
     return (
-        <div>
+        <main className="menu">
+            <h2>Our menu</h2>
             <Pizza />
             <Pizza />
             <Pizza />
-        </div>
+        </main>
     )
 }
 
