@@ -1,13 +1,13 @@
-import Pizza from "./components/Pizza/Pizza";
-
+import Header from "./components/Header.jsx";
+import Menu from "./components/Menu.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
     return (
         <>
-            <h1>Hello React!</h1>
-            <Pizza />
-            <Pizza />
-            <Pizza />
+            <Header />
+            <Menu />
+            <Footer />
         </>
     )
 }

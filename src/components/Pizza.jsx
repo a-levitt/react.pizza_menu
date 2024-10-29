@@ -1,5 +1,5 @@
 // import pizzaData from '../../data.js'
-import focaccia from './../../assets/pizzas/focaccia.jpg';
+import focaccia from '../assets/pizzas/focaccia.jpg';
 
 function Pizza() {
     return (
