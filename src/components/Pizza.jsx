@@ -1,12 +1,14 @@
-// import pizzaData from '../../data.js'
-import focaccia from '../assets/pizzas/focaccia.jpg';
+// import focaccia from '../assets/pizzas/focaccia.jpg';
 
-function Pizza() {
+function Pizza(props) {
     return (
         <div className="pizza">
-            <img src={focaccia} />
-            <h3>Focaccia</h3>
-            <p>Bread with italian olive oil and rosemary</p>
+            <img src={props.photoLink} alt={props.name} />
+            <div>
+                <h3>{props.name}</h3>
+                <p>{props.ingridients}</p>
+                <span>{props.price}</span>
+            </div>
         </div>
     )
 }
