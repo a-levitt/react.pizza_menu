@@ -4,15 +4,13 @@ function Pizza({pizzaObj}) {
 
    const { name, ingredients, price, photoName, soldOut } = pizzaObj;
 
-    if (soldOut) return null;
-
     return (
-        <li className="pizza">
+        <li className={ soldOut ? `pizza sold-out` : `pizza`}>
             <img src={`src/assets/${photoName}`} alt={name} />
             <div>
                 <h3>{name}</h3>
                 <p>{ingredients}</p>
-                <span>{price}</span>
+                <span>{soldOut ? 'SOLD OUT' : price}</span>
             </div>
         </li>
     )
