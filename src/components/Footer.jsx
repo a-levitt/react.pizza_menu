@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer className='footer'>
             <div className="order">
-                {isOpen && <p>We are open now!</p>}
+                {isOpen ? <p>We are open now!</p> : <p>We are closed.</p>}
                 <p>Work hours: {openHour}:00 - {closeHour}:00 CET.</p>
                 <button className="btn">Order</button>
             </div>

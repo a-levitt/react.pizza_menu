@@ -1,6 +1,9 @@
 // import focaccia from '../assets/pizzas/focaccia.jpg';
 
 function Pizza(props) {
+
+    if (props.pizzaObj.soldOut) return null;
+
     return (
         <li className="pizza">
             <img src={`src/assets/${props.pizzaObj.photoName}`} alt={props.pizzaObj.name} />
