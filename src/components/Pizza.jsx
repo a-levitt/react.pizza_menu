@@ -1,16 +1,18 @@
 // import focaccia from '../assets/pizzas/focaccia.jpg';
 
-function Pizza(props) {
+function Pizza({pizzaObj}) {
 
-    if (props.pizzaObj.soldOut) return null;
+   const { name, ingredients, price, photoName, soldOut } = pizzaObj;
+
+    if (soldOut) return null;
 
     return (
         <li className="pizza">
-            <img src={`src/assets/${props.pizzaObj.photoName}`} alt={props.pizzaObj.name} />
+            <img src={`src/assets/${photoName}`} alt={name} />
             <div>
-                <h3>{props.pizzaObj.name}</h3>
-                <p>{props.pizzaObj.ingredients}</p>
-                <span>{props.pizzaObj.price}</span>
+                <h3>{name}</h3>
+                <p>{ingredients}</p>
+                <span>{price}</span>
             </div>
         </li>
     )
