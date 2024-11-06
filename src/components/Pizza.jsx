@@ -1,11 +1,9 @@
-// import focaccia from '../assets/pizzas/focaccia.jpg';
-
 function Pizza({pizzaObj}) {
 
    const { name, ingredients, price, photoName, soldOut } = pizzaObj;
 
     return (
-        <li className={ soldOut ? `pizza sold-out` : `pizza`}>
+        <li className={`pizza ${soldOut? "sold-out" : ""}`}>
             <img src={`src/assets/${photoName}`} alt={name} />
             <div>
                 <h3>{name}</h3>
